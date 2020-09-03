@@ -1,0 +1,230 @@
+<DOCTYPE html>
+    <head>
+        <title>Lifestyle Store</title>
+        <style>
+            body{
+                width:100%;
+                height:100%;
+                margin:0;
+            }
+            a{
+                text-decoration:none;
+                background-color:transparent;
+                color:#ededed;
+            }
+            .header{
+                background-color:#000;
+                color:#fff;
+                border-color:#080808;
+                min-height:50px;
+                border:1px solid transparent;
+            }
+            .inner-header{
+                width:80%;
+                margin:auto;
+            }
+            .logo{
+                float:left;
+                height:50px;
+                padding:15px;
+                font-size:20px;
+                font-weight:bold;
+            }
+            .header-link{
+                float:right;
+                font-size:14px;
+                height:50px;
+                padding:15px 15px;
+                font-size:16px;
+                font-weight:bold;
+            }
+            form{
+                width:1000px;
+                margin:auto;
+                margin-top:25px;
+            }
+            .search{
+                width:80%;
+                padding:10px;
+                font-size:20px;
+            }
+            .submit{
+                width:150px;
+                padding:10px;
+                font-size:20px;
+                background-color:#333399;
+                color:white;
+            }
+            .breadcrumb{
+                display:flex;
+                list-style:none;
+            }
+            .breadcrumb li{
+                padding:20px;
+                font-weight:bold;
+            }
+            .breadcrumb li:after{
+                content:'';
+                margin-left:80px;
+            }
+            .breadcrumb li:last-child-after{
+                content:'';
+            }
+            .breadcrumb a{
+                color:black;
+                text-decoration:none;
+            }
+            .breadcrumb a:hover{
+                text-decoration:underline;
+            }
+            .content{
+                min-height:600px;
+            }
+            .banner-image{
+                padding-bottom:50px;
+                padding-left:220px;
+                margin-bottom:20px;
+                text-align:center;
+                color:#f8f8f8;
+                background-image:url(intro-bg_1.jpg);
+                background-size:cover;
+            }
+            .inner-banner-image{
+                padding-top:2%;
+                width:80%;
+                margin:auto;
+            }
+            .banner_content{
+                position:relative;
+                padding-top:6%;
+                padding-bottom:6%;
+                overflow:hidden;
+                margin-bottom:12%;
+                background-color:rgba(0,0,0,0.7);
+                max-width:660px;
+                }
+            .container{
+                width:90%;
+                margin:auto;
+                overflow:hidden;
+            }
+            .items{
+                width:30%;
+                display:block;
+                padding:4px;
+                margin-bottom:20px;
+                line-height:1.0;
+                background-color:#fff;
+                border:1px solid #ddd;
+                border-radius:4px;
+                float:left;
+                margin-left:1%;
+            }
+           .thumbnail{
+               display:block;
+               max-width:100%;
+               height:auto;
+           }
+           .caption{
+               padding:0px 10px 10px;
+               font-weight:bold;
+               text-align:center;
+           }
+           .caption a{
+               color:black;
+           }
+           .original-price{
+               color:grey;
+               text-transform:uppercase;
+           }
+           .current-price span{
+               font-weight:bold;
+               text-decoration:underline;
+               color:blue;
+           }
+           .savings{
+               color:green;
+           }
+           .footer{
+               background-color:#000;
+               color:#fff;
+               font-size:14px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class = "header">
+            <div class = "inner-header">
+                <div class = "Logo"><a href = " ">Lifestyle Store</a></div>
+                <div class = "header-link"><a href = "Signup.php">Signup</a></div>
+                <div class = "header-link"><a href = "Login.php">Login</a></div>
+            </div>
+        </div>
+        <form action = "http://flipkart.com" target = "_blank">
+            <input type = "text" name = "text" class = "search" placeholder = "Search for Products,Brands and More">
+            <input type = "submit" name = "submit" class = "submit" value = "Search">
+        </form>
+        <ol class = "breadcrumb">
+            <li><a href = " ">Home</a></li>
+            <li><a href = " ">Beauty</a></li>
+            <li><a href = " ">Fashion</a></li>
+            <li><a herf = " ">Appliances</a></li>
+            <li><a href = " ">Toys & Baby</a></li>
+            <li><a href = " ">Sports</a></li>
+            <li><a href = " ">Books</a></li>
+            <li><a href = " ">Furnitures</a></li>
+        </ol>
+        <div class = "content">
+            <div class = "banner-image">
+                <div class = "inner-banner-image">
+                    <div class = "banner_content">
+                        <h1>Welcome to our Lifestyle Store</h1>
+                        <p>We have the best collection of Appliances,Mobiles,Clothes and many more for you.No need to hunt around,We have all in one place.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "container">
+            <div class = "items">
+                <a href = "#">
+                    <img src = "shirt.jpg" alt = "" class = "thumbnail">
+                    <div class = "caption">
+                        <h2><a href = " ">Shirts</a></h2>
+                        <p class = "original-price">MRP:Rs599</p>
+                        <p class = "current-price">Price You Pay<span>Rs399</span></p>
+                        <p class = "savings">Your Savings Rs200</p> 
+                    </div>
+                </a>
+            </div>
+            <div class = "items">
+                <a href = "#">
+                    <img src = "camera.jpg" alt = "" class = "thumbnail">
+                    <div class = "caption">
+                        <h2><a href = " ">Cameras</a></h2>
+                        <p class = "original-price">MRP:Rs9999</p>
+                        <p class = "current-price">Price You Pay<span>Rs7999</span></p>
+                        <p class = "savings">Your Savings Rs2000</p>
+                    </div>
+                </a>
+            </div>
+            <div class = "items">
+                <a href = "#">
+                    <img src = "watch.jpg" alt = "" class = "thumbnail">
+                    <div class = "caption">
+                        <h2><a href = " ">Watches</a></h2>
+                        <p class = "original-price">MRP:Rs1999</p>
+                        <P class = "current-price">Price You Pay<span>Rs1599</span></P>
+                        <p class = "savings">Your Savings Rs400</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer class = "footer">
+            <div class = "container">
+                <center>
+                    <p>Copyright @ Lifestyle Store. All Rights Reserved | Contact Us:+91 9876436541.</p>
+                </center>
+            </div>
+        </footer>
+    </body>
+    </DOCTYPE html>
